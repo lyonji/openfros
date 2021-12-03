@@ -19,7 +19,11 @@ git clone https://github.com/destan19/openfros.git
 如果这一步报错，切换网络或者搭建梯子后编译  
 
 3. 选择产品并编译固件  
-make menuconfig 选择你要编译的产品  
+make menuconfig 选择你要编译的产品   
+并选择你想要编译的插件，如果需要集成第三方插件，可以先下载到package目录然后make menuconfig进行选择 
+必需选择的库：  
+libjson-c libblobmsg-json libubox libubus
+
 make V=s  完成固件编译
 
 ## 源码说明
@@ -41,6 +45,7 @@ https://github.com/coolsnowwolf/lede.git
 安装脚本为install.sh
 卸载脚本为remove.sh
 
+安装过程中如果报了依赖错误，可以编译出对应库并进行安装。  
 
 ## 免责声明
 插件不会包含任何后门，不会窃取用户隐私数据。  
