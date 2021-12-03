@@ -1,6 +1,10 @@
 
 fros固件openwrt框架源码，通过该源码编译出来的固件可以安装应用过滤、上网审计、上网认证、游戏管控等fros插件  
 
+## 演示视频  
+
+https://www.bilibili.com/video/BV1Yq4y167Qu
+
 编译脚本和ipk持续更新中  
 ## 如何编译
 > 编译方法和openwrt编译方法一样
